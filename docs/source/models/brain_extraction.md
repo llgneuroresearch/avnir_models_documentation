@@ -27,7 +27,7 @@ To run the inference, run the following command:
     docker run -ti -v /path/to/your/data:/input -v /path/to/your/output:/output \
     -u 0:$(id -g) --gpus all --rm --shm-size 2g avnirlab/ctbet:1.0.0 -device cuda
     ```
-
+    
     - Replace `/path/to/your/data` with the directory containing your input CT images.
     - Replace `/path/to/your/output` with the directory where you want the output files to be saved.
     - Use the `-device cuda` flag for GPU-based inference. For CPU-based inference, replace `cuda` with `cpu` and remove `--gpus all` flag.
