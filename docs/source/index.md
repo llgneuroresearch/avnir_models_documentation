@@ -14,4 +14,5 @@ docker
 :caption: Models
 :hidden:
 models/brain_extraction
+models/iips
 ```
