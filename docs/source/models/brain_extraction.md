@@ -31,6 +31,7 @@ docker run -ti -v /path/to/your/data:/input -v /path/to/your/output:/output \
   - Replace `/path/to/your/data` with the directory containing your input CT images.
   - Replace `/path/to/your/output` with the directory where you want the output files to be saved.
   - Use the `-device cuda` flag for GPU-based inference. For CPU-based inference, replace `cuda` with `cpu` and remove `--gpus all` flag.
+  - Replace `<version>` with the version of ctbet you want to use.
 
 ## Example Workflow
 
@@ -62,5 +63,6 @@ Here’s a step-by-step example to demonstrate CTbet usage:
 
 ## Additional Resources
 
+- **Dockerhub**: [Dockerhub](https://hub.docker.com/r/avnirlab/ctbet)
 - **GitHub Repository**: [CTbet-Docker](https://github.com/llgneuroresearch/CTbet-Docker)
 - **Docker Documentation**: [Get Started with Docker](https://docs.docker.com/get-started/)

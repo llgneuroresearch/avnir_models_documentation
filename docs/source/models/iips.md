@@ -71,5 +71,6 @@ Here’s a step-by-step example to demonstrate IIPS usage:
 
 ## Additional Resources
 
+- **Dockerhub**: [Dockerhub](https://hub.docker.com/r/avnirlab/iips)
 - **GitHub Repository**: [IIPS-Docker](https://github.com/llgneuroresearch/IIPS-Docker)
 - **Docker Documentation**: [Get Started with Docker](https://docs.docker.com/get-started/)
