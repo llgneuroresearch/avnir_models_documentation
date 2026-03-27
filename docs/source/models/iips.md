@@ -19,6 +19,8 @@ To install IIPS, pull the Docker image from the repository:
 docker pull avnirlab/iips:<version>
 ```
 
+For available IIPS versions, see the [IIPS Docker Hub tags](https://hub.docker.com/r/avnirlab/iips/tags). It is recommended to use a specific version tag rather than `latest` for reproducibility.
+
 ## Usage
 
 To run the inference, run the following command:
