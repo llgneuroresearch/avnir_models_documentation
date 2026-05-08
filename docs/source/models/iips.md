@@ -2,10 +2,11 @@
 
 The IVH-ICH-PHE Segmentation (IIPS) is a  tool designed to segment intracerebral hemorrhage (ICH), intraventricular hemorrhage (IVH) and perihematomal edema (PHE) from CT images using a Docker container. The model was trained using nnU-Net default configuration and the with the `3D-fullres` setting.  We repurpose the 2019 Intracranial Hemorrhage Detection Challenge dataset for segmentation. External testing was conducted on 183 independent baseline NCCTs with spontaneous ICH at our institution. Further details are available in our upcoming publication. 
 
+
 ## Prerequisites
 
 Before using IIPS, ensure the following:
-
+-  Head CT images needs to be in the `nii.gz` format. 
 - Docker is installed on your system. Refer to the [Docker Installation Guide](../docker.md) or the [official Docker documentation](https://docs.docker.com/get-docker/) for setup instructions.
 - Your system meets the hardware requirements for running Docker containers, especially if you plan to use GPU acceleration.
 
@@ -30,7 +31,7 @@ docker run -ti -v /path/to/your/data:/input -v /path/to/your/output:/output \
 -u 0:$(id -g) --gpus all --rm --shm-size 2g avnirlab/iips:<version> -device cuda
 ```
 
-  - Replace `/path/to/your/data` with the directory containing your input CT images.
+  - Replace `/path/to/your/data` with the directory containing your input CT images in the nifti (.nii.gz) format.
   - Replace `/path/to/your/output` with the directory where you want the output files to be saved.
   - Use the `-device cuda` flag for GPU-based inference. For CPU-based inference, replace `cuda` with `cpu` and remove `--gpus all` flag.
   - Replace `<version>` with the version of IIPS you want to use.
