@@ -16,6 +16,7 @@ Before using IIPS, ensure the following:
 
 > **Important**:
 > - A **CUDA-enabled NVIDIA GPU is strongly recommended**. CPU inference has not been fully tested; see this [issue](https://github.com/llgneuroresearch/IIPS-Docker/issues/2#issuecomment-5499476356).
+> - Also see the [nnU-Net hardware requirements](https://github.com/MIC-DKFZ/nnUNet/blob/master/documentation/installation_instructions.md?utm_source=chatgpt.com#hardware-requirements-for-inference).
 > - If you want to run the inference using CUDA, please use NVIDIA driver 560 or higher and CUDA 12.6 or higher.
 
 ## Installation
