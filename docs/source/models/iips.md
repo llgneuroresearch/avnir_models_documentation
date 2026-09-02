@@ -1,6 +1,6 @@
 # IIPS (IVH-ICH-PHE Segmentation)
 
-![Animated gif segmentation](docs/source/assets/iips_segmentation_example.gif)
+![Animated gif segmentation](https://github.com/llgneuroresearch/avnir_models_documentation/blob/4043f840e19c0bfa9bdd767558ee2e08cebd9705/docs/source/assets/iips_segmentation_example.gif)
 
 The IVH-ICH-PHE Segmentation (IIPS) is a  tool designed to segment intracerebral hemorrhage (ICH), intraventricular hemorrhage (IVH), and perihematomal edema (PHE) from CT images using a Docker container. The model was trained using the nnU-Net default configuration, with the exception of customized density clipping, and the `3D-fullres` setting on 341 non-contrast head CTs. We used the [Radiological Society of North America 2019 Intracranial Hemorrhage Detection Challenge](https://www.kaggle.com/c/rsna-intracranial-hemorrhage-detection) dataset for segmentation. External testing was conducted on 183 independent baseline NCCTs with spontaneous ICH at our institution. Further details are available in our upcoming publication. 
 
