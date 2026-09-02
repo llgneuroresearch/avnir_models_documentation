@@ -3,7 +3,7 @@
 # -- Project information
 
 project = "Avnir Models documentation"
-copyright = "2024-2025, Avnir"
+copyright = "2024-2026, Avnir"
 author = "Avnir"
 
 release = ""
@@ -13,6 +13,7 @@ version = ""
 
 extensions = [
     "sphinx.ext.autodoc",
+    "myst_parser"
 ]
 
 intersphinx_mapping = {
