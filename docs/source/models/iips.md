@@ -1,6 +1,6 @@
 # IIPS (IVH-ICH-PHE Segmentation)
 
-The IVH-ICH-PHE Segmentation (IIPS) is a  tool designed to segment intracerebral hemorrhage (ICH), intraventricular hemorrhage (IVH) and perihematomal edema (PHE) from CT images using a Docker container. The model was trained using nnU-Net default configuration and the `3D-fullres` setting.  We repurposed the 2019 Intracranial Hemorrhage Detection Challenge dataset for segmentation. External testing was conducted on 183 independent baseline NCCTs with spontaneous ICH at our institution. Further details are available in our upcoming publication. 
+The IVH-ICH-PHE Segmentation (IIPS) is a  tool designed to segment intracerebral hemorrhage (ICH), intraventricular hemorrhage (IVH), and perihematomal edema (PHE) from CT images using a Docker container. The model was trained using the nnU-Net default configuration, with the exception of customized density clipping, and the `3D-fullres` setting on 341 non-contrast head CTs. We used the [Radiological Society of North America 2019 Intracranial Hemorrhage Detection Challenge](https://www.kaggle.com/c/rsna-intracranial-hemorrhage-detection) dataset for segmentation. External testing was conducted on 183 independent baseline NCCTs with spontaneous ICH at our institution. Further details are available in our upcoming publication. 
 
 
 ## Prerequisites
@@ -10,7 +10,9 @@ Before using IIPS, ensure the following:
 - Docker is installed on your system. Refer to the [Docker Installation Guide](../docker.md) or the [official Docker documentation](https://docs.docker.com/get-docker/) for setup instructions.
 - Your system meets the hardware requirements for running Docker containers, especially if you plan to use GPU acceleration.
 
-> **Important**: If you want to run the inference using CUDA, please use NVIDIA driver 560 or higher and CUDA 12.6 or higher.
+> **Important**:
+> - A **CUDA-enabled NVIDIA GPU is strongly recommended**. CPU inference has not been tested.
+> - If you want to run the inference using CUDA, please use NVIDIA driver 560 or higher and CUDA 12.6 or higher.
 
 ## Installation
 
@@ -33,7 +35,7 @@ docker run -ti -v /path/to/your/data:/input -v /path/to/your/output:/output \
 
   - Replace `/path/to/your/data` with the directory containing your input CT images in the nifti (.nii.gz) format.
   - Replace `/path/to/your/output` with the directory where you want the output files to be saved.
-  - Use the `-device cuda` flag for GPU-based inference. For CPU-based inference, replace `cuda` with `cpu` and remove `--gpus all` flag.
+  - Use the `-device cuda` flag for GPU-based inference. For CPU-based inference, replace `cuda` with `cpu` and remove `--gpus all` flag. Note that CPU inference has not been fully tested and may not work. 
   - Replace `<version>` with the version of IIPS you want to use.
 
 ## Label Information
