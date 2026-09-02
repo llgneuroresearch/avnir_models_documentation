@@ -15,7 +15,7 @@ Before using IIPS, ensure the following:
 - Your system meets the hardware requirements for running Docker containers, especially if you plan to use GPU acceleration.
 
 > **Important**:
-> - A **CUDA-enabled NVIDIA GPU is strongly recommended**. CPU inference has not been tested.
+> - A **CUDA-enabled NVIDIA GPU is strongly recommended**. CPU inference has not been fully tested; see this [issue](https://github.com/llgneuroresearch/IIPS-Docker/issues/2#issuecomment-5499476356).
 > - If you want to run the inference using CUDA, please use NVIDIA driver 560 or higher and CUDA 12.6 or higher.
 
 ## Installation
