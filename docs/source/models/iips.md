@@ -1,6 +1,6 @@
 # IIPS (IPH-IVH-PHE Segmentation)
 
-```{image} /assets/iips_segmentation_example.gif
+```{image} /assets/iips_segmentation_example_removeonceuptaded.gif
 :alt: Animated gif segmentation
 :align: center
 ```
