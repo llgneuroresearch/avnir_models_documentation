@@ -1,6 +1,11 @@
 # CT Brain Extraction
 
-The CT Brain Extraction tool (CTbet) is a powerful utility designed to efficiently extract brain regions from CT images using a Docker container.
+The CT Brain Extraction tool (CTbet) is a segmentation model based on nnU-Net designed to  extract brain regions from CT images using a Docker container. We aimed to develop a model that is robust to complex findings frequently encountered in neurocritical settings (e.g., hemorrhage, artifacts, surgical alterations). 
+
+```{image} /assets/BET_sweep.gif
+:alt: Animated GIF BET sweep
+:align: center
+```
 
 ## Prerequisites
 
